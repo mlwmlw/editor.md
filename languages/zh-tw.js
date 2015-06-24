@@ -24,12 +24,12 @@
                 "list-ol"        : "有序列表",
                 hr               : "横线",
                 link             : "链接",
-                "reference-link" : "引用鏈接",
+                "reference-link" : "引用超連結",
                 image            : "圖片",
                 code             : "行內代碼",
                 "preformatted-text" : "預格式文本 / 代碼塊（縮進風格）",
                 "code-block"     : "代碼塊（多語言風格）",
-                table            : "添加表格",
+                table            : "新增表格",
                 datetime         : "日期時間",
                 emoji            : "Emoji 表情",
                 "html-entities"  : "HTML 實體字符",
@@ -50,25 +50,25 @@
             },
             dialog : {
                 link   : {
-                    title    : "添加鏈接",
-                    url      : "鏈接地址",
-                    urlTitle : "鏈接標題",
-                    urlEmpty : "錯誤：請填寫鏈接地址。"
+                    title    : "新增超連結",
+                    url      : "超連結地址",
+                    urlTitle : "超連結標題",
+                    urlEmpty : "錯誤：請填寫超連結地址。"
                 },
                 referenceLink : {
-                    title    : "添加引用鏈接",
+                    title    : "新增引用超連結",
                     name     : "引用名稱",
-                    url      : "鏈接地址",
-                    urlId    : "鏈接ID",
-                    urlTitle : "鏈接標題",
-                    nameEmpty: "錯誤：引用鏈接的名稱不能為空。",
-                    idEmpty  : "錯誤：請填寫引用鏈接的ID。",
-                    urlEmpty : "錯誤：請填寫引用鏈接的URL地址。"
+                    url      : "超連結地址",
+                    urlId    : "超連結ID",
+                    urlTitle : "超連結標題",
+                    nameEmpty: "錯誤：引用超連結的名稱不能為空。",
+                    idEmpty  : "錯誤：請填寫引用超連結的ID。",
+                    urlEmpty : "錯誤：請填寫引用超連結的URL地址。"
                 },
                 image  : {
-                    title    : "添加圖片",
+                    title    : "新增圖片",
                     url      : "圖片地址",
-                    link     : "圖片鏈接",
+                    link     : "圖片超連結",
                     alt      : "圖片描述",
                     uploadButton     : "本地上傳",
                     imageURLEmpty    : "錯誤：圖片地址不能為空。",
@@ -76,11 +76,11 @@
                     formatNotAllowed : "錯誤：只允許上傳圖片文件，允許上傳的圖片文件格式有："
                 },
                 preformattedText : {
-                    title             : "添加預格式文本或代碼塊", 
+                    title             : "新增預格式文本或代碼塊", 
                     emptyAlert        : "錯誤：請填寫預格式文本或代碼的內容。"
                 },
                 codeBlock : {
-                    title             : "添加代碼塊",                 
+                    title             : "新增代碼塊",                 
                     selectLabel       : "代碼語言：",
                     selectDefaultText : "請語言代碼語言",
                     otherLanguage     : "其他語言",

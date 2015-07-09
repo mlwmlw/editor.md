@@ -51,15 +51,12 @@
 			var colors = "Red,White,Cyan,Silver,Blue,Gray,DarkBlue,Black,LightBlue,Orange,Purple,Brown,Yellow,Maroon,Lime,Green,Magenta,Olive".split(',');
 			var dialogColor = [];
 			for(var i in colors) {
-				dialogColor.push('<div style="float:left;min-width: 7em;"><label style="width:100%;padding:0;"><input type="radio" name="color" value="' + colors[i] + '" /><font color="' + colors[i] + '">' + colors[i] + '</font></label></div>');
+				dialogColor.push('<div style="float:left;min-width: 8em;"><label style="width:100%;padding:0;"><input type="radio" name="color" value="' + colors[i] + '" /><span style="margin: 0 3px;width:1em;height:1em;display:inline-block;background-color:' + colors[i] + '"></span>' + colors[i] + '</label></div>');
 			}
 			
 			var dialogContent = [
 				"<div class=\"editormd-form\" style=\"padding: 13px 0;overflow:hidden\">"
-			].concat(dialogColor).concat([
-				"<div class=\"fa-btns\"></div>",
-				"</div>"
-			]).join("\n");
+			].concat(dialogColor).join("\n");
 			
 			if (editor.find("." + dialogName).length > 0) 
 			{
@@ -73,9 +70,9 @@
 			{
 				dialog = this.createDialog({
 					name       : dialogName,
-					title      : dialogLang.title,
+					title      : '改變字體顏色',
 					width      : 360,
-					height     : 226,
+					height     : 320,
 					mask       : settings.dialogShowMask,
 					drag       : settings.dialogDraggable,
 					content    : dialogContent,
@@ -97,26 +94,6 @@
                         }]
 					}
 				});
-			}
-
-			var faBtns = dialog.find(".fa-btns");
-
-			if (faBtns.html() === "")
-			{
-				var icons  = ["align-justify", "align-left", "align-center", "align-right"];
-				var _lang  = dialogLang.aligns;
-				var values = ["_default", "left", "center", "right"];
-
-				for (var i = 0, len = icons.length; i < len; i++) 
-				{
-					var checked = (i === 0) ? " checked=\"checked\"" : "";
-					var btn = "<a href=\"javascript:;\"><label for=\"editormd-table-dialog-radio"+i+"\" title=\"" + _lang[i] + "\">";
-					btn += "<input type=\"radio\" name=\"table-align\" id=\"editormd-table-dialog-radio"+i+"\" value=\"" + values[i] + "\"" +checked + " />&nbsp;";
-					btn += "<i class=\"fa fa-" + icons[i] + "\"></i>";
-					btn += "</label></a>";
-
-					faBtns.append(btn);
-				}
 			}
 		};
 

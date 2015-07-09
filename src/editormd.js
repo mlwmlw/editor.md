@@ -96,20 +96,20 @@
         gotoLine             : true,
         codeFold             : false,
         autoHeight           : false,
-		autoFocus            : true,
+        autoFocus            : true,
         autoCloseTags        : true,
         searchReplace        : true,
         syncScrolling        : true,           // true | false | "single", default true
         readOnly             : false,
         tabSize              : 4,
-		indentUnit           : 4,
+        indentUnit           : 4,
         lineNumbers          : true,
-		lineWrapping         : true,
-		autoCloseBrackets    : true,
-		showTrailingSpace    : true,
-		matchBrackets        : true,
-		indentWithTabs       : true,
-		styleSelectedText    : true,
+        lineWrapping         : true,
+        autoCloseBrackets    : true,
+        showTrailingSpace    : true,
+        matchBrackets        : true,
+        indentWithTabs       : true,
+        styleSelectedText    : true,
         matchWordHighlight   : true,           // options: true, false, "onselected"
         styleActiveLine      : true,           // Highlight the current line
         dialogLockScreen     : true,
@@ -3565,11 +3565,10 @@
             
             var headingHTML = "<h" + level + " id=\"h"+ level + "-" + this.options.headerPrefix + id +"\">";
             
-            headingHTML    += "<a name=\"" + text + "\" class=\"reference-link\"></a>";
+            headingHTML    += "<a class=\"reference-link\"></a>";
             headingHTML    += "<span class=\"header-link octicon octicon-link\"></span>";
             headingHTML    += (hasLinkReg) ? this.atLink(this.emoji(linkText)) : this.atLink(this.emoji(text));
             headingHTML    += "</h" + level + ">";
-
             return headingHTML;
         };
         
